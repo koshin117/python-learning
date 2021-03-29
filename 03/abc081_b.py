@@ -7,9 +7,18 @@ def main():
 
     # compute
     """WRITE BELOW"""
-
+    flag = "True"
+    x = -1
+    while flag == "True":
+        x += 1
+        for i in range(0,N):
+            if As[i] % 2 == 0:
+                As[i] /= 2
+            else:
+                flag = "false"
 
     # output
+    print(x)
 
 
 if __name__ == '__main__':
