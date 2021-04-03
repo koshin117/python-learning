@@ -1,5 +1,5 @@
 #E
-def gcd(As :int) -> int:
+def gcd(As :list) -> int:
     N = As[0]
     M = As[1]
     if N == M:
