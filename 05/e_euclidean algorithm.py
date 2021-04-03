@@ -1,4 +1,7 @@
-def gcd(N,M :int) -> int:
+#E
+def gcd(As :int) -> int:
+    N = As[0]
+    M = As[1]
     if N == M:
         return N
     elif N > M:
@@ -6,16 +9,18 @@ def gcd(N,M :int) -> int:
         if N == 0:
             return M
         else:
-            return gcd(M,N)
+            As[0] = N
+            return gcd(As)
     else:
-        return gcd(M,N)
+        As[0],As[1] = M,N
+        return gcd(As)
 def main():
     # input
-    N, M = map(int, input().split())
+    As = list(map(int, input().split()))
     # compute
 
     # output
-    print(gcd(N,M))
+    print(gcd(As))
 
 if __name__ == '__main__':
     main()

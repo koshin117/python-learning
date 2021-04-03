@@ -1,3 +1,4 @@
+#C
 def my_max(As :list) -> int:
     return max(As)
 def main():

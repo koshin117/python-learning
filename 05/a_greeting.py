@@ -1,5 +1,6 @@
+#A
 def greeting(x :str) -> str:
-    return "hello,"+ x
+    return "hello, "+ x
 def main():
     # input
     s = input()

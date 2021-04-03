@@ -1,3 +1,4 @@
+#B
 def average(As :list) -> float:
     return float(sum(As)/len(As))
 def main():

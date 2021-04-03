@@ -1,6 +1,4 @@
-from typing import NoReturn
-
-
+#F
 def bubble_sort(N :list) -> list:
     x = len(N)
     while x != 1:
